@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>为商科技ERP v2.0 - API文档 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"system/upload.html","title":""},"data":{"navigation":{"logo":{"text":"为商ERP v2.0 - API文档","type":"link","path":"index.html"},"main":[{"text":"协议规范","type":"link","path":"index.html"},{"text":"文件管理","type":"link","path":"system/upload.html"},{"text":"租户相关","type":"link","path":"system/tenant.html"},{"text":"API列表","type":"label"},{"text":"1. 开单任务","type":"link","path":"dsn/dsn_order.html"},{"text":"2. 开单任务深化单","type":"link","path":"dsn/dsn_order_deepen.html"}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">为商ERP v2.0 - API文档</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="为商文件管理服务"><a href="#为商文件管理服务" class="headerlink" title="为商文件管理服务"></a>为商文件管理服务</h1><h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><p>使用<code>form-data</code>方式向服务器发送<code>POST</code>或者<code>PUT</code>请求。</p>
+<ol>
+<li>请求地址: /[filetype]</li>
+<li>请求头与API请求头一致</li>
+<li>filetype当前有: files、images</li>
+</ol>
+<p>响应格式:</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"data"</span>: &#123;</span><br><span class="line">            <span class="attr">"id"</span>: <span class="string">"2GCWR3907GK0RUSU7SPEMGSFA3"</span>,</span><br><span class="line">            <span class="attr">"url"</span>: <span class="string">"/[filetype]/00000000/20182GCWR3907GK0RUSU7SPEMGSFA3.png"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">        <span class="attr">"data"</span>: &#123;</span><br><span class="line">            <span class="attr">"id"</span>: <span class="string">"45VRFTRJWEG8SRWRHK6LWEKJSP"</span>,</span><br><span class="line">            <span class="attr">"url"</span>: <span class="string">"/[filetype]/00000000/201845VRFTRJWEG8SRWRHK6LWEKJSP.png"</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h2 id="文件下载"><a href="#文件下载" class="headerlink" title="文件下载"></a>文件下载</h2><p>使用响应格式的url配合上服务器地址即可:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET /[filetype]/00000000/201845VRFTRJWEG8SRWRHK6LWEKJSP.png</span><br></pre></td></tr></table></figure>
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
