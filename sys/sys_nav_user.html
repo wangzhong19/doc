@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>中核中原安全生产管理系统 - API文档 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"sys/sys_nav_user.html","title":""},"data":{"navigation":{"logo":{"text":"中核中原 - API文档","type":"link","path":"index.html"},"main":[{"text":"公共方法","type":"link","path":"index.html"},{"text":"接口目录","type":"link","path":"nav.html"},{"text":"1.首页与公告栏","type":"label"},{"text":"2.目标职责","type":"label"},{"text":"3.安全文化","type":"label"},{"text":"4.制度化管理","type":"label"},{"text":"5.安全教育培训","type":"label"},{"text":"6.生产设备设施管理","type":"label"},{"text":"7.作业安全","type":"label"},{"text":"8.隐患排查治理","type":"label"},{"text":"9.安全环保风险管控","type":"label"},{"text":"10.职业卫生","type":"label"},{"text":"11.环境保护","type":"label"},{"text":"12.应急管理","type":"label"},{"text":"13.事故事件管理","type":"label"},{"text":"14.持续改进","type":"label","children":[{"text":"良好实践&经验反馈","type":"link","path":"ci/ci_experience.html"},{"text":"自评报告-模板分类","type":"link","path":"ci/ci_self_category.html"},{"text":"自评报告-模板数据","type":"link","path":"ci/ci_self_data.html"},{"text":"自评报告-自评报告","type":"link","path":"ci/ci_self_report.html"},{"text":"自评报告-自评分数","type":"link","path":"ci/ci_self_score.html"}]},{"text":"15.考核管理","type":"label"},{"text":"16.安全报表","type":"label"},{"text":"17.数据看板","type":"label"},{"text":"18.知识库","type":"label"},{"text":"19.基础数据管理","type":"label"},{"text":"20.系统管理","type":"label","children":[{"text":"功能菜单导航表","type":"link","path":"sys/sys_nav.html"},{"text":"用户自定义菜单","type":"link","path":"sys/sys_nav_user.html"}]}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">中核中原 - API文档</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="用户自定义菜单"><a href="#用户自定义菜单" class="headerlink" title="用户自定义菜单"></a>用户自定义菜单</h1><h2 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h2><h3 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/get</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>string</td>
+<td>R</td>
+<td>记录的SID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>VARCHAR</td>
+<td></td>
+<td>SID</td>
+</tr>
+<tr>
+<td>R_USER</td>
+<td>VARCHAR</td>
+<td></td>
+<td>用户id</td>
+</tr>
+<tr>
+<td>R_NAV</td>
+<td>VARCHAR</td>
+<td></td>
+<td>导航id</td>
+</tr>
+<tr>
+<td>N_INDEX</td>
+<td>INTEGER</td>
+<td></td>
+<td>排序号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="预赋值"><a href="#预赋值" class="headerlink" title="预赋值"></a>预赋值</h2><h3 id="Request-1"><a href="#Request-1" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/prepare</code></p>
+<blockquote>
+<p>不需要条件</p>
+</blockquote>
+<h3 id="Response-1"><a href="#Response-1" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="条件预赋值"><a href="#条件预赋值" class="headerlink" title="条件预赋值"></a>条件预赋值</h2><h3 id="Request-2"><a href="#Request-2" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/prepare_cond</code></p>
+<blockquote>
+<p>不需要条件</p>
+</blockquote>
+<h3 id="Response-2"><a href="#Response-2" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h2><h3 id="Request-3"><a href="#Request-3" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/copy</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R_ROW</td>
+<td>string</td>
+<td>R</td>
+<td>记录的SID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-3"><a href="#Response-3" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="Request-4"><a href="#Request-4" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/insert</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td>SID</td>
+</tr>
+<tr>
+<td>R_USER</td>
+<td>VARCHAR</td>
+<td></td>
+<td>用户id</td>
+</tr>
+<tr>
+<td>R_NAV</td>
+<td>VARCHAR</td>
+<td></td>
+<td>导航id</td>
+</tr>
+<tr>
+<td>N_INDEX</td>
+<td>INTEGER</td>
+<td></td>
+<td>排序号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-4"><a href="#Response-4" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><h3 id="Request-5"><a href="#Request-5" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/update</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>R_USER</td>
+<td>VARCHAR</td>
+<td></td>
+<td>用户id</td>
+</tr>
+<tr>
+<td>R_NAV</td>
+<td>VARCHAR</td>
+<td></td>
+<td>导航id</td>
+</tr>
+<tr>
+<td>N_INDEX</td>
+<td>INTEGER</td>
+<td></td>
+<td>排序号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-5"><a href="#Response-5" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="Request-6"><a href="#Request-6" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/list?pageindex={pageindex}&amp;pagesize={pagesize}</code></p>
+<p>TODO</p>
+<h3 id="Response-6"><a href="#Response-6" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list</td>
+<td>page</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>– SID</td>
+<td>VARCHAR</td>
+<td></td>
+<td>SID</td>
+</tr>
+<tr>
+<td>– R_USER</td>
+<td>VARCHAR</td>
+<td></td>
+<td>用户id</td>
+</tr>
+<tr>
+<td>– R_NAV</td>
+<td>VARCHAR</td>
+<td></td>
+<td>导航id</td>
+</tr>
+<tr>
+<td>– N_INDEX</td>
+<td>INTEGER</td>
+<td></td>
+<td>排序号</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-6"><a href="#示例-6" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><h3 id="Request-7"><a href="#Request-7" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/delete</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>string</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-7"><a href="#Response-7" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-7"><a href="#示例-7" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="批量删除"><a href="#批量删除" class="headerlink" title="批量删除"></a>批量删除</h2><h3 id="Request-8"><a href="#Request-8" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sys_nav_user/delrows</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIDS</td>
+<td>string[]</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-8"><a href="#Response-8" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-8"><a href="#示例-8" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
