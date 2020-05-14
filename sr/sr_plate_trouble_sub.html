@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>中核中原安全生产管理系统 - API文档 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"sr/sr_plate_trouble_sub.html","title":""},"data":{"navigation":{"logo":{"text":"中核中原 - API文档","type":"link","path":"index.html"},"main":[{"text":"公共方法","type":"link","path":"index.html"},{"text":"接口目录","type":"link","path":"nav.html"},{"text":"1.首页与公告栏","type":"label","children":[{"text":"首页","type":"link","path":"hp/home_page.html"}]},{"text":"2.目标职责","type":"label","children":[{"text":"目标","type":"link","path":"tr/tr_target_main.html"},{"text":"目标计划","type":"link","path":"tr/tr_target_plan.html"},{"text":"目标计划辅助","type":"link","path":"tr/tr_target_auxiliary.html"},{"text":"目标计划责任表","type":"link","path":"tr/tr_target_responsibility.html"},{"text":"责任书","type":"link","path":"tr/tr_responsibility_main.html"},{"text":"责任书内容详情","type":"link","path":"tr/tr_responsibility_content.html"},{"text":"hp","type":"link","path":"ttr/hp.html"},{"text":"shkb","type":"link","path":"ttr/shkb.html"},{"text":"ttr_check","type":"link","path":"ttr/ttr_check.html"},{"text":"ttr_conference_action","type":"link","path":"ttr/ttr_conference_action.html"},{"text":"ttr_conference_meeting_main","type":"link","path":"ttr/ttr_conference_meeting_main.html"},{"text":"ttr_expense_examine","type":"link","path":"ttr/ttr_expense_examine.html"},{"text":"ttr_expense_fine","type":"link","path":"ttr/ttr_expense_fine.html"},{"text":"ttr_expense_plan_detail_sub","type":"link","path":"ttr/ttr_expense_plan_detail_sub.html"},{"text":"ttr_expense_plan_main","type":"link","path":"ttr/ttr_expense_plan_main.html"},{"text":"ttr_expense_standingbook_main","type":"link","path":"ttr/ttr_expense_standingbook_main.html"}]},{"text":"3.安全文化","type":"label","children":[{"text":"sc_safetyculture_main","type":"link","path":"sc/sc_safetyculture_main.html"}]},{"text":"4.制度化管理","type":"label","children":[{"text":"im_hse","type":"link","path":"im/im_hse.html"},{"text":"im_operating","type":"link","path":"im/im_operating.html"},{"text":"im_operating_rationality","type":"link","path":"im/im_operating_rationality.html"},{"text":"im_regulations_main","type":"link","path":"im/im_regulations_main.html"},{"text":"im_regulations_rationality","type":"link","path":"im/im_regulations_rationality.html"},{"text":"im_system_revision_plan_main","type":"link","path":"im/im_system_revision_plan_main.html"}]},{"text":"5.安全教育培训","type":"label","children":[{"text":"培训计划","type":"link","path":"set/set_training_plan.html"},{"text":"培训计划详情","type":"link","path":"set/set_training_details.html"},{"text":"培训计划时间","type":"link","path":"set/set_training_date.html"},{"text":"培训计划参与部门","type":"link","path":"set/set_training_dept.html"},{"text":"培训计划参与人员","type":"link","path":"set/set_training_user.html"},{"text":"培训课程","type":"link","path":"set/set_training_course.html"},{"text":"培训课程签到","type":"link","path":"set/set_training_sign.html"},{"text":"培训课程评估问题","type":"link","path":"set/set_assess_questions.html"},{"text":"培训课程评估分数","type":"link","path":"set/set_assess_score.html"},{"text":"培训课程题库","type":"link","path":"set/set_question_bank.html"},{"text":"培训课程试题","type":"link","path":"set/set_question_test.html"},{"text":"培训课程考试分数","type":"link","path":"set/set_question_score.html"}]},{"text":"6.生产设备设施管理","type":"label","children":[{"text":"pf_management","type":"link","path":"pf/pf_management.html"},{"text":"pf_management_classify","type":"link","path":"pf/pf_management_classify.html"}]},{"text":"7.作业安全","type":"label","children":[{"text":"os_bigproject","type":"link","path":"os/os_bigproject.html"},{"text":"os_classify","type":"link","path":"os/os_classify.html"},{"text":"os_operation","type":"link","path":"os/os_operation.html"},{"text":"os_threepeoplework","type":"link","path":"os/os_threepeoplework.html"}]},{"text":"8.隐患排查治理","type":"label","children":[{"text":"安全检查计划","type":"link","path":"htg/htg_security_check_plan.html"},{"text":"安全检查方案","type":"link","path":"htg/htg_security_check.html"},{"text":"隐患治理 & 重大隐患","type":"link","path":"htg/htg_danger_record.html"}]},{"text":"9.安全环保风险管控","type":"label","children":[{"text":"saeprc_factors_main","type":"link","path":"saeprc/saeprc_factors_main.html"},{"text":"saeprc_factors_sub","type":"link","path":"saeprc/saeprc_factors_sub.html"},{"text":"saeprc_hazard_main","type":"link","path":"saeprc/saeprc_hazard_main.html"},{"text":"saeprc_hazard_sub","type":"link","path":"saeprc/saeprc_hazard_sub.html"},{"text":"saeprc_major_hazard","type":"link","path":"saeprc/saeprc_major_hazard.html"}]},{"text":"10.职业卫生","type":"label","children":[{"text":"oh_disease_archives_list","type":"link","path":"oh/oh_disease_archives_list.html"},{"text":"oh_disease_archives_main","type":"link","path":"oh/oh_disease_archives_main.html"},{"text":"oh_equipment","type":"link","path":"oh/oh_equipment.html"},{"text":"oh_health_factors_main","type":"link","path":"oh/oh_health_factors_main.html"},{"text":"oh_occupational_hazards_main","type":"link","path":"oh/oh_occupational_hazards_main.html"},{"text":"oh_occupational_hazards_sub","type":"link","path":"oh/oh_occupational_hazards_sub.html"},{"text":"oh_ppe_inventory_main","type":"link","path":"oh/oh_ppe_inventory_main.html"},{"text":"oh_ppe_library_main","type":"link","path":"oh/oh_ppe_library_main.html"}]},{"text":"11.环境保护","type":"label","children":[{"text":"ep_accounts","type":"link","path":"ep/ep_accounts.html"},{"text":"ep_equipment","type":"link","path":"ep/ep_equipment.html"},{"text":"ep_management","type":"link","path":"ep/ep_management.html"},{"text":"ep_plan_testing_mian","type":"link","path":"ep/ep_plan_testing_mian.html"},{"text":"ep_plan_testing_sub","type":"link","path":"ep/ep_plan_testing_sub.html"}]},{"text":"12.应急管理","type":"label","children":[{"text":"em_drill_detail_sub","type":"link","path":"em/em_drill_detail_sub.html"},{"text":"em_drill_main","type":"link","path":"em/em_drill_main.html"},{"text":"em_drill_plan","type":"link","path":"em/em_drill_plan.html"},{"text":"em_drill_plan_contact","type":"link","path":"em/em_drill_plan_contact.html"},{"text":"em_drill_plan_steps","type":"link","path":"em/em_drill_plan_steps.html"},{"text":"em_drill_plan_unit","type":"link","path":"em/em_drill_plan_unit.html"},{"text":"em_drill_report","type":"link","path":"em/em_drill_report.html"}]},{"text":"13.事故事件管理","type":"label","children":[{"text":"事故事件上报","type":"link","path":"am/am_accident.html"},{"text":"事故事件调查人员","type":"link","path":"am/am_accident_investigator.html"}]},{"text":"14.持续改进","type":"label","children":[{"text":"良好实践&经验反馈","type":"link","path":"ci/ci_experience.html"},{"text":"自评报告-模板分类","type":"link","path":"ci/ci_self_category.html"},{"text":"自评报告-模板数据","type":"link","path":"ci/ci_self_data.html"},{"text":"自评报告-自评报告","type":"link","path":"ci/ci_self_report.html"},{"text":"自评报告-自评分数","type":"link","path":"ci/ci_self_score.html"}]},{"text":"15.考核管理","type":"label","children":[{"text":"anm_blacklist","type":"link","path":"anm/anm_blacklist.html"},{"text":"anm_contractor_main","type":"link","path":"anm/anm_contractor_main.html"},{"text":"anm_contractor_sub","type":"link","path":"anm/anm_contractor_sub.html"},{"text":"anm_standard_main","type":"link","path":"anm/anm_standard_main.html"},{"text":"anm_standard_sub","type":"link","path":"anm/anm_standard_sub.html"}]},{"text":"16.安全报表","type":"label","children":[{"text":"sr_accident_casualties_sub","type":"link","path":"sr/sr_accident_casualties_sub.html"},{"text":"sr_accident_information_sub","type":"link","path":"sr/sr_accident_information_sub.html"},{"text":"sr_casualty_report_mian","type":"link","path":"sr/sr_casualty_report_mian.html"},{"text":"sr_command_quarter_sub","type":"link","path":"sr/sr_command_quarter_sub.html"},{"text":"sr_modify_rate_main","type":"link","path":"sr/sr_modify_rate_main.html"},{"text":"sr_plate_trouble_sub","type":"link","path":"sr/sr_plate_trouble_sub.html"},{"text":"sr_quarter_conclusion_main","type":"link","path":"sr/sr_quarter_conclusion_main.html"},{"text":"sr_rescue_check_sub","type":"link","path":"sr/sr_rescue_check_sub.html"},{"text":"sr_safety_drill_sub","type":"link","path":"sr/sr_safety_drill_sub.html"},{"text":"sr_safety_report","type":"link","path":"sr/sr_safety_report.html"},{"text":"sr_training_plan_main","type":"link","path":"sr/sr_training_plan_main.html"},{"text":"公共的三个方法","type":"link","path":"sr/three_methods.html"}]},{"text":"17.数据看板","type":"label","children":[{"text":"人员管理 & 隐患 & 教育培训","type":"link","path":"db/user_htg_set.html"},{"text":"考核管理","type":"link","path":"db/anm_data_board.html"},{"text":"应急管理","type":"link","path":"db/em_data_board.html"},{"text":"环境保护","type":"link","path":"db/ep_data_board.html"},{"text":"hp","type":"link","path":"db/hp.html"},{"text":"制度化管理","type":"link","path":"db/im.html"},{"text":"职业卫生","type":"link","path":"db/oh_mian.html"},{"text":"安全风险管控","type":"link","path":"db/saeprc_data_board.html"},{"text":"shkb","type":"link","path":"db/shkb.html"},{"text":"目标职责","type":"link","path":"db/tr.html"}]},{"text":"18.知识库","type":"label","children":[{"text":"kb_accident_main","type":"link","path":"kb/kb_accident_main.html"},{"text":"kb_case","type":"link","path":"kb/kb_case.html"},{"text":"kb_dangerous_goods","type":"link","path":"kb/kb_dangerous_goods.html"},{"text":"kb_equipment","type":"link","path":"kb/kb_equipment.html"},{"text":"kb_hazards_chemicals","type":"link","path":"kb/kb_hazards_chemicals.html"},{"text":"kb_hazards_site","type":"link","path":"kb/kb_hazards_site.html"},{"text":"kb_health_mian","type":"link","path":"kb/kb_health_mian.html"},{"text":"kb_job_security","type":"link","path":"kb/kb_job_security.html"},{"text":"kb_law_main","type":"link","path":"kb/kb_law_main.html"},{"text":"kb_risk","type":"link","path":"kb/kb_risk.html"},{"text":"kb_security_check","type":"link","path":"kb/kb_security_check.html"},{"text":"kb_trouble","type":"link","path":"kb/kb_trouble.html"}]},{"text":"19.基础数据管理","type":"label","children":[{"text":"da_area","type":"link","path":"da/da_area.html"},{"text":"da_item_main","type":"link","path":"da/da_item_main.html"}]},{"text":"20.系统管理","type":"label","children":[{"text":"企业信息","type":"link","path":"sys/sys_org.html"},{"text":"企业部门","type":"link","path":"sys/sys_dept.html"},{"text":"用户信息","type":"link","path":"sys/sys_user.html"},{"text":"岗位信息","type":"link","path":"sys/sys_position.html"},{"text":"岗位用户关系","type":"link","path":"sys/sys_position_user.html"},{"text":"授权功能","type":"link","path":"sys/sys_authres.html"},{"text":"角色","type":"link","path":"sys/sys_role.html"},{"text":"角色资源授权","type":"link","path":"sys/sys_role_auth.html"},{"text":"角色用户关系","type":"link","path":"sys/sys_role_user.html"},{"text":"功能菜单导航表","type":"link","path":"sys/sys_nav.html"},{"text":"用户自定义菜单","type":"link","path":"sys/sys_nav_user.html"},{"text":"数据字典类别","type":"link","path":"sys/sys_dict_class.html"},{"text":"数据字段数据","type":"link","path":"sys/sys_dict_detail.html"},{"text":"系统附件","type":"link","path":"sys/sys_attach_file.html"},{"text":"系统富文本","type":"link","path":"sys/sys_attach_text.html"},{"text":"编号序列","type":"link","path":"sys/sys_serial.html"}]}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">中核中原 - API文档</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="板块（直属单位）隐患排查治理情况统计-从表"><a href="#板块（直属单位）隐患排查治理情况统计-从表" class="headerlink" title="板块（直属单位）隐患排查治理情况统计-从表"></a>板块（直属单位）隐患排查治理情况统计-从表</h1><h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><h3 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/details</code><br>| 参数名称 | 类型 | 必要性 | 描述 |<br>| — | — | — | — |<br>| SUMSID | string | R | 记录的SID |</p>
+<h3 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUMSID</td>
+<td>SID</td>
+<td></td>
+<td>主表sid</td>
+</tr>
+<tr>
+<td>C_TABLE_NAME</td>
+<td>VARCHAR</td>
+<td></td>
+<td>报表名称</td>
+</tr>
+<tr>
+<td>USER_NAME</td>
+<td>SID</td>
+<td></td>
+<td>填表人</td>
+</tr>
+<tr>
+<td>AUDIT_NAME</td>
+<td>SID</td>
+<td></td>
+<td>审核人</td>
+</tr>
+<tr>
+<td>C_TITLE</td>
+<td>VARCHAR</td>
+<td></td>
+<td>标题</td>
+</tr>
+<tr>
+<td>R_TEMPLATE_SID</td>
+<td>SID</td>
+<td></td>
+<td>模板id</td>
+</tr>
+<tr>
+<td>T_DATE</td>
+<td>DATE</td>
+<td></td>
+<td>填报时间</td>
+</tr>
+<tr>
+<td>C_REPORT_REMARK</td>
+<td>VARCHAR</td>
+<td></td>
+<td>填报说明</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>subList[字段]</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUBSID</td>
+<td>VARCHAR</td>
+<td></td>
+<td>SID</td>
+</tr>
+<tr>
+<td>R_PID</td>
+<td>SID</td>
+<td></td>
+<td>关联主表sid</td>
+</tr>
+<tr>
+<td>C_UNIT_NAME</td>
+<td>VARCHAR</td>
+<td></td>
+<td>单位名称</td>
+</tr>
+<tr>
+<td>C_NEW_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患总数</td>
+</tr>
+<tr>
+<td>C_COMPLETE_SUM</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新隐患整改总数</td>
+</tr>
+<tr>
+<td>C_MONTH_COMPLETE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患整改率</td>
+</tr>
+<tr>
+<td>C_OLD_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>遗留隐患总数</td>
+</tr>
+</tbody>
+</table>
+<p>TODO</p>
+<h2 id="保存服务"><a href="#保存服务" class="headerlink" title="保存服务"></a>保存服务</h2><h3 id="Request-1"><a href="#Request-1" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/save</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUMSID</td>
+<td>—</td>
+<td>—</td>
+<td>记录id</td>
+</tr>
+<tr>
+<td>R_USER</td>
+<td>—</td>
+<td>—</td>
+<td>填报人</td>
+</tr>
+<tr>
+<td>C_TITLE</td>
+<td>—</td>
+<td>—</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>C_PHONE</td>
+<td>—</td>
+<td>—</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>C_QUARTER</td>
+<td>—</td>
+<td>—</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>C_ENTERPRISE_TYPE</td>
+<td>—</td>
+<td>—</td>
+<td>企业类型</td>
+</tr>
+<tr>
+<td>R_TEMPLATE_SID</td>
+<td>—</td>
+<td>—</td>
+<td>模板id</td>
+</tr>
+<tr>
+<td>T_DATE</td>
+<td>—</td>
+<td>—</td>
+<td>填报时间</td>
+</tr>
+<tr>
+<td>C_YEAR</td>
+<td>—</td>
+<td>—</td>
+<td>年</td>
+</tr>
+<tr>
+<td>WF_TYPE</td>
+<td>string</td>
+<td></td>
+<td>流程类型</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>subList[字段]</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C_UNIT_NAME</td>
+<td>VARCHAR</td>
+<td></td>
+<td>单位名称</td>
+</tr>
+<tr>
+<td>C_NEW_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患总数</td>
+</tr>
+<tr>
+<td>C_COMPLETE_SUM</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新隐患整改总数</td>
+</tr>
+<tr>
+<td>C_MONTH_COMPLETE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患整改率</td>
+</tr>
+<tr>
+<td>C_OLD_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>遗留隐患总数</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-1"><a href="#Response-1" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><h3 id="Request-2"><a href="#Request-2" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/save</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SUMSID</td>
+<td>—</td>
+<td>—</td>
+<td>记录id</td>
+</tr>
+<tr>
+<td>R_USER</td>
+<td>—</td>
+<td>—</td>
+<td>填报人</td>
+</tr>
+<tr>
+<td>C_TITLE</td>
+<td>—</td>
+<td>—</td>
+<td>标题</td>
+</tr>
+<tr>
+<td>C_PHONE</td>
+<td>—</td>
+<td>—</td>
+<td>电话</td>
+</tr>
+<tr>
+<td>C_QUARTER</td>
+<td>—</td>
+<td>—</td>
+<td>季度</td>
+</tr>
+<tr>
+<td>C_ENTERPRISE_TYPE</td>
+<td>—</td>
+<td>—</td>
+<td>企业类型</td>
+</tr>
+<tr>
+<td>R_TEMPLATE_SID</td>
+<td>—</td>
+<td>—</td>
+<td>模板id</td>
+</tr>
+<tr>
+<td>T_DATE</td>
+<td>—</td>
+<td>—</td>
+<td>填报时间</td>
+</tr>
+<tr>
+<td>C_YEAR</td>
+<td>—</td>
+<td>—</td>
+<td>年</td>
+</tr>
+<tr>
+<td>WF_TYPE</td>
+<td>string</td>
+<td></td>
+<td>流程类型</td>
+</tr>
+<tr>
+<td>DATA_STATUS</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td>是否修改主表</td>
+<td>传1修改 如果传了必须传SUMSID  </td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>subList[字段]</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C_UNIT_NAME</td>
+<td>VARCHAR</td>
+<td></td>
+<td>单位名称</td>
+</tr>
+<tr>
+<td>C_NEW_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患总数</td>
+</tr>
+<tr>
+<td>C_COMPLETE_SUM</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新隐患整改总数</td>
+</tr>
+<tr>
+<td>C_MONTH_COMPLETE</td>
+<td>NUMBER</td>
+<td></td>
+<td>当月新排查隐患整改率</td>
+</tr>
+<tr>
+<td>C_OLD_TROUBLE</td>
+<td>NUMBER</td>
+<td></td>
+<td>遗留隐患总数</td>
+</tr>
+<tr>
+<td>UPDATE_STATUS</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td>是否修改从表</td>
+<td>1修改 ，2新增 ，3删除</td>
+</tr>
+<tr>
+<td>SUBSID</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td>SID</td>
+<td>修改删除时用  删除时只传1就可以</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-2"><a href="#Response-2" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h2 id="查询板块（直属单位）隐患排查治理情况统计表-这个不用了，先保留"><a href="#查询板块（直属单位）隐患排查治理情况统计表-这个不用了，先保留" class="headerlink" title="查询板块（直属单位）隐患排查治理情况统计表      这个不用了，先保留"></a>查询板块（直属单位）隐患排查治理情况统计表      这个不用了，先保留</h2><h3 id="Request-3"><a href="#Request-3" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/getSrPlateTroubleSub</code></p>
+<h3 id="Response-3"><a href="#Response-3" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>| DETPNAME | SID |  | 主表sid |<br>| DEPTID | VARCHAR |  | 单位名称 |<br>| CURRENT_CHECK_NUM | INTEGER |  | 当月新排查隐患总数 |<br>| CURRENT_RECTIFY_NUM | INTEGER |  | 当月新隐患整改总数 |<br>| RECTIFICATION_RATE | INTEGER |  | 当月新排查隐患整改率 |<br>| LEGACY_NUM | INTEGER |  | 遗留隐患总数 |</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="查询-板块（直属单位）隐患排查治理情况统计表-只有安全质量部能报表这张表-，深核公司未做区分"><a href="#查询-板块（直属单位）隐患排查治理情况统计表-只有安全质量部能报表这张表-，深核公司未做区分" class="headerlink" title="查询 板块（直属单位）隐患排查治理情况统计表  只有安全质量部能报表这张表 ，深核公司未做区分"></a>查询 板块（直属单位）隐患排查治理情况统计表  只有安全质量部能报表这张表 ，深核公司未做区分</h2><h3 id="Request-4"><a href="#Request-4" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/getSrModifyRateMain</code></p>
+<p>| 参数名称 | 类型 | 必要性 | 描述 |<br>| DISID | string | R | 模板SID |   这里的模板SID传  成员单位月度新排查隐患反差率和整改率统计表  因为数据来源于：成员单位月度新排查隐患反差率和整改率统计表<br>| STARTDATE | string | R | 开始时间 |<br>| ENDDATE | string | R | 结束时间 |<br>| deptList | string | R | 要查询的部门 |</p>
+<h3 id="Response-4"><a href="#Response-4" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>| DETPNAME | SID |  | 主表sid |<br>| DEPTID | VARCHAR |  | 单位名称 |<br>| CURRENT_CHECK_NUM | INTEGER |  | 当月新排查隐患总数 |<br>| CURRENT_RECTIFY_NUM | INTEGER |  | 当月新隐患整改总数 |<br>| RECTIFICATION_RATE | INTEGER |  | 当月新排查隐患整改率 |<br>| LEGACY_NUM | INTEGER |  | 遗留隐患总数 |</p>
+<h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h2><h3 id="Request-5"><a href="#Request-5" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/get</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>string</td>
+<td>R</td>
+<td>记录的SID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-5"><a href="#Response-5" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>VARCHAR</td>
+<td></td>
+<td>SID</td>
+</tr>
+<tr>
+<td>R_PID</td>
+<td>SID</td>
+<td></td>
+<td>主表sid</td>
+</tr>
+</tbody>
+</table>
+<p>| C_UNIT_NAME | VARCHAR |  | 单位名称 |<br>| C_NEW_TROUBLE | INTEGER |  | 当月新排查隐患总数 |<br>| C_COMPLETE_SUM | INTEGER |  | 当月新隐患整改总数 |<br>| C_MONTH_COMPLETE | INTEGER |  | 当月新排查隐患整改率 |<br>| C_OLD_TROUBLE | INTEGER |  | 遗留隐患总数 |<br>| B_DELETE | BOOLEAN |  | 是否删除 |<br>| N_INDEX | INTEGER |  | 排序号 |<br>| T_CREATE | DATETIME |  | 创建时间 |<br>| R_CREATE | SID |  | 创建人ID |<br>| S_CREATE | VARCHAR |  | 创建人 |<br>| T_UPDATE | DATETIME |  | 修改时间 |<br>| R_UPDATE | SID |  | 修改人ID |<br>| S_UPDATE | VARCHAR |  | 修改人 |</p>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="预赋值"><a href="#预赋值" class="headerlink" title="预赋值"></a>预赋值</h2><h3 id="Request-6"><a href="#Request-6" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/prepare</code></p>
+<blockquote>
+<p>不需要条件</p>
+</blockquote>
+<h3 id="Response-6"><a href="#Response-6" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="条件预赋值"><a href="#条件预赋值" class="headerlink" title="条件预赋值"></a>条件预赋值</h2><h3 id="Request-7"><a href="#Request-7" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/prepare_cond</code></p>
+<blockquote>
+<p>不需要条件</p>
+</blockquote>
+<h3 id="Response-7"><a href="#Response-7" class="headerlink" title="Response"></a>Response</h3><p>TODO</p>
+<h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="拷贝"><a href="#拷贝" class="headerlink" title="拷贝"></a>拷贝</h2><h3 id="Request-8"><a href="#Request-8" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/copy</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R_ROW</td>
+<td>string</td>
+<td>R</td>
+<td>记录的SID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-8"><a href="#Response-8" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="新增"><a href="#新增" class="headerlink" title="新增"></a>新增</h2><h3 id="Request-9"><a href="#Request-9" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/insert</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>VARCHAR</td>
+<td>R</td>
+<td>SID</td>
+</tr>
+<tr>
+<td>R_PID</td>
+<td>SID</td>
+<td></td>
+<td>主表sid</td>
+</tr>
+</tbody>
+</table>
+<p>| C_UNIT_NAME | VARCHAR |  | 单位名称 |<br>| C_NEW_TROUBLE | INTEGER |  | 当月新排查隐患总数 |<br>| C_COMPLETE_SUM | INTEGER |  | 当月新隐患整改总数 |<br>| C_MONTH_COMPLETE | INTEGER |  | 当月新排查隐患整改率 |<br>| C_OLD_TROUBLE | INTEGER |  | 遗留隐患总数 |<br>| B_DELETE | BOOLEAN | R | 是否删除 |<br>| N_INDEX | INTEGER |  | 排序号 |</p>
+<h3 id="Response-9"><a href="#Response-9" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-6"><a href="#示例-6" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="修改-1"><a href="#修改-1" class="headerlink" title="修改"></a>修改</h2><h3 id="Request-10"><a href="#Request-10" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/update</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>string</td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td>R_PID</td>
+<td>SID</td>
+<td></td>
+<td>主表sid</td>
+</tr>
+</tbody>
+</table>
+<p>| C_UNIT_NAME | VARCHAR |  | 单位名称 |<br>| C_NEW_TROUBLE | INTEGER |  | 当月新排查隐患总数 |<br>| C_COMPLETE_SUM | INTEGER |  | 当月新隐患整改总数 |<br>| C_MONTH_COMPLETE | INTEGER |  | 当月新排查隐患整改率 |<br>| C_OLD_TROUBLE | INTEGER |  | 遗留隐患总数 |<br>| B_DELETE | BOOLEAN |  | 是否删除 |<br>| N_INDEX | INTEGER |  | 排序号 |</p>
+<h3 id="Response-10"><a href="#Response-10" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-7"><a href="#示例-7" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="Request-11"><a href="#Request-11" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/list?pageindex=&amp;pagesize=</code></p>
+<p>TODO</p>
+<h3 id="Response-11"><a href="#Response-11" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list</td>
+<td>page</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>– SID</td>
+<td>VARCHAR</td>
+<td></td>
+<td>SID</td>
+</tr>
+<tr>
+<td>– R_PID</td>
+<td>SID</td>
+<td></td>
+<td>主表sid</td>
+</tr>
+<tr>
+<td>– C_UNIT_NAME</td>
+<td>VARCHAR</td>
+<td></td>
+<td>单位名称</td>
+</tr>
+<tr>
+<td>– C_NEW_TROUBLE</td>
+<td>INTEGER</td>
+<td></td>
+<td>当月新排查隐患总数</td>
+</tr>
+<tr>
+<td>– C_COMPLETE_SUM</td>
+<td>INTEGER</td>
+<td></td>
+<td>当月新隐患整改总数</td>
+</tr>
+<tr>
+<td>– C_MONTH_COMPLETE</td>
+<td>INTEGER</td>
+<td></td>
+<td>当月新排查隐患整改率</td>
+</tr>
+<tr>
+<td>– C_OLD_TROUBLE</td>
+<td>INTEGER</td>
+<td></td>
+<td>遗留隐患总数</td>
+</tr>
+<tr>
+<td>– B_DELETE</td>
+<td>BOOLEAN</td>
+<td></td>
+<td>是否删除</td>
+</tr>
+<tr>
+<td>– N_INDEX</td>
+<td>INTEGER</td>
+<td></td>
+<td>排序号</td>
+</tr>
+<tr>
+<td>– T_CREATE</td>
+<td>DATETIME</td>
+<td></td>
+<td>创建时间</td>
+</tr>
+<tr>
+<td>– R_CREATE</td>
+<td>SID</td>
+<td></td>
+<td>创建人ID</td>
+</tr>
+<tr>
+<td>– S_CREATE</td>
+<td>VARCHAR</td>
+<td></td>
+<td>创建人</td>
+</tr>
+<tr>
+<td>– T_UPDATE</td>
+<td>DATETIME</td>
+<td></td>
+<td>修改时间</td>
+</tr>
+<tr>
+<td>– R_UPDATE</td>
+<td>SID</td>
+<td></td>
+<td>修改人ID</td>
+</tr>
+<tr>
+<td>– S_UPDATE</td>
+<td>VARCHAR</td>
+<td></td>
+<td>修改人</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-8"><a href="#示例-8" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h2><h3 id="Request-12"><a href="#Request-12" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/delete</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SID</td>
+<td>string</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-12"><a href="#Response-12" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-9"><a href="#示例-9" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+<h2 id="批量删除"><a href="#批量删除" class="headerlink" title="批量删除"></a>批量删除</h2><h3 id="Request-13"><a href="#Request-13" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/service/sr_plate_trouble_sub/delrows</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SIDS</td>
+<td>string[]</td>
+<td>R</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-13"><a href="#Response-13" class="headerlink" title="Response"></a>Response</h3><blockquote>
+<p>不返回额外的响应数据</p>
+</blockquote>
+<h3 id="示例-10"><a href="#示例-10" class="headerlink" title="示例"></a>示例</h3><p>TODO</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

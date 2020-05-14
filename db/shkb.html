@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>中核中原安全生产管理系统 - API文档 |  </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"path":"db/shkb.html","title":""},"data":{"navigation":{"logo":{"text":"中核中原 - API文档","type":"link","path":"index.html"},"main":[{"text":"公共方法","type":"link","path":"index.html"},{"text":"接口目录","type":"link","path":"nav.html"},{"text":"1.首页与公告栏","type":"label","children":[{"text":"首页","type":"link","path":"hp/home_page.html"}]},{"text":"2.目标职责","type":"label","children":[{"text":"目标","type":"link","path":"tr/tr_target_main.html"},{"text":"目标计划","type":"link","path":"tr/tr_target_plan.html"},{"text":"目标计划辅助","type":"link","path":"tr/tr_target_auxiliary.html"},{"text":"目标计划责任表","type":"link","path":"tr/tr_target_responsibility.html"},{"text":"责任书","type":"link","path":"tr/tr_responsibility_main.html"},{"text":"责任书内容详情","type":"link","path":"tr/tr_responsibility_content.html"},{"text":"hp","type":"link","path":"ttr/hp.html"},{"text":"shkb","type":"link","path":"ttr/shkb.html"},{"text":"ttr_check","type":"link","path":"ttr/ttr_check.html"},{"text":"ttr_conference_action","type":"link","path":"ttr/ttr_conference_action.html"},{"text":"ttr_conference_meeting_main","type":"link","path":"ttr/ttr_conference_meeting_main.html"},{"text":"ttr_expense_examine","type":"link","path":"ttr/ttr_expense_examine.html"},{"text":"ttr_expense_fine","type":"link","path":"ttr/ttr_expense_fine.html"},{"text":"ttr_expense_plan_detail_sub","type":"link","path":"ttr/ttr_expense_plan_detail_sub.html"},{"text":"ttr_expense_plan_main","type":"link","path":"ttr/ttr_expense_plan_main.html"},{"text":"ttr_expense_standingbook_main","type":"link","path":"ttr/ttr_expense_standingbook_main.html"}]},{"text":"3.安全文化","type":"label","children":[{"text":"sc_safetyculture_main","type":"link","path":"sc/sc_safetyculture_main.html"}]},{"text":"4.制度化管理","type":"label","children":[{"text":"im_hse","type":"link","path":"im/im_hse.html"},{"text":"im_operating","type":"link","path":"im/im_operating.html"},{"text":"im_operating_rationality","type":"link","path":"im/im_operating_rationality.html"},{"text":"im_regulations_main","type":"link","path":"im/im_regulations_main.html"},{"text":"im_regulations_rationality","type":"link","path":"im/im_regulations_rationality.html"},{"text":"im_system_revision_plan_main","type":"link","path":"im/im_system_revision_plan_main.html"}]},{"text":"5.安全教育培训","type":"label","children":[{"text":"培训计划","type":"link","path":"set/set_training_plan.html"},{"text":"培训计划详情","type":"link","path":"set/set_training_details.html"},{"text":"培训计划时间","type":"link","path":"set/set_training_date.html"},{"text":"培训计划参与部门","type":"link","path":"set/set_training_dept.html"},{"text":"培训计划参与人员","type":"link","path":"set/set_training_user.html"},{"text":"培训课程","type":"link","path":"set/set_training_course.html"},{"text":"培训课程签到","type":"link","path":"set/set_training_sign.html"},{"text":"培训课程评估问题","type":"link","path":"set/set_assess_questions.html"},{"text":"培训课程评估分数","type":"link","path":"set/set_assess_score.html"},{"text":"培训课程题库","type":"link","path":"set/set_question_bank.html"},{"text":"培训课程试题","type":"link","path":"set/set_question_test.html"},{"text":"培训课程考试分数","type":"link","path":"set/set_question_score.html"}]},{"text":"6.生产设备设施管理","type":"label","children":[{"text":"pf_management","type":"link","path":"pf/pf_management.html"},{"text":"pf_management_classify","type":"link","path":"pf/pf_management_classify.html"}]},{"text":"7.作业安全","type":"label","children":[{"text":"os_bigproject","type":"link","path":"os/os_bigproject.html"},{"text":"os_classify","type":"link","path":"os/os_classify.html"},{"text":"os_operation","type":"link","path":"os/os_operation.html"},{"text":"os_threepeoplework","type":"link","path":"os/os_threepeoplework.html"}]},{"text":"8.隐患排查治理","type":"label","children":[{"text":"安全检查计划","type":"link","path":"htg/htg_security_check_plan.html"},{"text":"安全检查方案","type":"link","path":"htg/htg_security_check.html"},{"text":"隐患治理 & 重大隐患","type":"link","path":"htg/htg_danger_record.html"}]},{"text":"9.安全环保风险管控","type":"label","children":[{"text":"saeprc_factors_main","type":"link","path":"saeprc/saeprc_factors_main.html"},{"text":"saeprc_factors_sub","type":"link","path":"saeprc/saeprc_factors_sub.html"},{"text":"saeprc_hazard_main","type":"link","path":"saeprc/saeprc_hazard_main.html"},{"text":"saeprc_hazard_sub","type":"link","path":"saeprc/saeprc_hazard_sub.html"},{"text":"saeprc_major_hazard","type":"link","path":"saeprc/saeprc_major_hazard.html"}]},{"text":"10.职业卫生","type":"label","children":[{"text":"oh_disease_archives_list","type":"link","path":"oh/oh_disease_archives_list.html"},{"text":"oh_disease_archives_main","type":"link","path":"oh/oh_disease_archives_main.html"},{"text":"oh_equipment","type":"link","path":"oh/oh_equipment.html"},{"text":"oh_health_factors_main","type":"link","path":"oh/oh_health_factors_main.html"},{"text":"oh_occupational_hazards_main","type":"link","path":"oh/oh_occupational_hazards_main.html"},{"text":"oh_occupational_hazards_sub","type":"link","path":"oh/oh_occupational_hazards_sub.html"},{"text":"oh_ppe_inventory_main","type":"link","path":"oh/oh_ppe_inventory_main.html"},{"text":"oh_ppe_library_main","type":"link","path":"oh/oh_ppe_library_main.html"}]},{"text":"11.环境保护","type":"label","children":[{"text":"ep_accounts","type":"link","path":"ep/ep_accounts.html"},{"text":"ep_equipment","type":"link","path":"ep/ep_equipment.html"},{"text":"ep_management","type":"link","path":"ep/ep_management.html"},{"text":"ep_plan_testing_mian","type":"link","path":"ep/ep_plan_testing_mian.html"},{"text":"ep_plan_testing_sub","type":"link","path":"ep/ep_plan_testing_sub.html"}]},{"text":"12.应急管理","type":"label","children":[{"text":"em_drill_detail_sub","type":"link","path":"em/em_drill_detail_sub.html"},{"text":"em_drill_main","type":"link","path":"em/em_drill_main.html"},{"text":"em_drill_plan","type":"link","path":"em/em_drill_plan.html"},{"text":"em_drill_plan_contact","type":"link","path":"em/em_drill_plan_contact.html"},{"text":"em_drill_plan_steps","type":"link","path":"em/em_drill_plan_steps.html"},{"text":"em_drill_plan_unit","type":"link","path":"em/em_drill_plan_unit.html"},{"text":"em_drill_report","type":"link","path":"em/em_drill_report.html"}]},{"text":"13.事故事件管理","type":"label","children":[{"text":"事故事件上报","type":"link","path":"am/am_accident.html"},{"text":"事故事件调查人员","type":"link","path":"am/am_accident_investigator.html"}]},{"text":"14.持续改进","type":"label","children":[{"text":"良好实践&经验反馈","type":"link","path":"ci/ci_experience.html"},{"text":"自评报告-模板分类","type":"link","path":"ci/ci_self_category.html"},{"text":"自评报告-模板数据","type":"link","path":"ci/ci_self_data.html"},{"text":"自评报告-自评报告","type":"link","path":"ci/ci_self_report.html"},{"text":"自评报告-自评分数","type":"link","path":"ci/ci_self_score.html"}]},{"text":"15.考核管理","type":"label","children":[{"text":"anm_blacklist","type":"link","path":"anm/anm_blacklist.html"},{"text":"anm_contractor_main","type":"link","path":"anm/anm_contractor_main.html"},{"text":"anm_contractor_sub","type":"link","path":"anm/anm_contractor_sub.html"},{"text":"anm_standard_main","type":"link","path":"anm/anm_standard_main.html"},{"text":"anm_standard_sub","type":"link","path":"anm/anm_standard_sub.html"}]},{"text":"16.安全报表","type":"label","children":[{"text":"sr_accident_casualties_sub","type":"link","path":"sr/sr_accident_casualties_sub.html"},{"text":"sr_accident_information_sub","type":"link","path":"sr/sr_accident_information_sub.html"},{"text":"sr_casualty_report_mian","type":"link","path":"sr/sr_casualty_report_mian.html"},{"text":"sr_command_quarter_sub","type":"link","path":"sr/sr_command_quarter_sub.html"},{"text":"sr_modify_rate_main","type":"link","path":"sr/sr_modify_rate_main.html"},{"text":"sr_plate_trouble_sub","type":"link","path":"sr/sr_plate_trouble_sub.html"},{"text":"sr_quarter_conclusion_main","type":"link","path":"sr/sr_quarter_conclusion_main.html"},{"text":"sr_rescue_check_sub","type":"link","path":"sr/sr_rescue_check_sub.html"},{"text":"sr_safety_drill_sub","type":"link","path":"sr/sr_safety_drill_sub.html"},{"text":"sr_safety_report","type":"link","path":"sr/sr_safety_report.html"},{"text":"sr_training_plan_main","type":"link","path":"sr/sr_training_plan_main.html"},{"text":"公共的三个方法","type":"link","path":"sr/three_methods.html"}]},{"text":"17.数据看板","type":"label","children":[{"text":"人员管理 & 隐患 & 教育培训","type":"link","path":"db/user_htg_set.html"},{"text":"考核管理","type":"link","path":"db/anm_data_board.html"},{"text":"应急管理","type":"link","path":"db/em_data_board.html"},{"text":"环境保护","type":"link","path":"db/ep_data_board.html"},{"text":"hp","type":"link","path":"db/hp.html"},{"text":"制度化管理","type":"link","path":"db/im.html"},{"text":"职业卫生","type":"link","path":"db/oh_mian.html"},{"text":"安全风险管控","type":"link","path":"db/saeprc_data_board.html"},{"text":"shkb","type":"link","path":"db/shkb.html"},{"text":"目标职责","type":"link","path":"db/tr.html"}]},{"text":"18.知识库","type":"label","children":[{"text":"kb_accident_main","type":"link","path":"kb/kb_accident_main.html"},{"text":"kb_case","type":"link","path":"kb/kb_case.html"},{"text":"kb_dangerous_goods","type":"link","path":"kb/kb_dangerous_goods.html"},{"text":"kb_equipment","type":"link","path":"kb/kb_equipment.html"},{"text":"kb_hazards_chemicals","type":"link","path":"kb/kb_hazards_chemicals.html"},{"text":"kb_hazards_site","type":"link","path":"kb/kb_hazards_site.html"},{"text":"kb_health_mian","type":"link","path":"kb/kb_health_mian.html"},{"text":"kb_job_security","type":"link","path":"kb/kb_job_security.html"},{"text":"kb_law_main","type":"link","path":"kb/kb_law_main.html"},{"text":"kb_risk","type":"link","path":"kb/kb_risk.html"},{"text":"kb_security_check","type":"link","path":"kb/kb_security_check.html"},{"text":"kb_trouble","type":"link","path":"kb/kb_trouble.html"}]},{"text":"19.基础数据管理","type":"label","children":[{"text":"da_area","type":"link","path":"da/da_area.html"},{"text":"da_item_main","type":"link","path":"da/da_item_main.html"}]},{"text":"20.系统管理","type":"label","children":[{"text":"企业信息","type":"link","path":"sys/sys_org.html"},{"text":"企业部门","type":"link","path":"sys/sys_dept.html"},{"text":"用户信息","type":"link","path":"sys/sys_user.html"},{"text":"岗位信息","type":"link","path":"sys/sys_position.html"},{"text":"岗位用户关系","type":"link","path":"sys/sys_position_user.html"},{"text":"授权功能","type":"link","path":"sys/sys_authres.html"},{"text":"角色","type":"link","path":"sys/sys_role.html"},{"text":"角色资源授权","type":"link","path":"sys/sys_role_auth.html"},{"text":"角色用户关系","type":"link","path":"sys/sys_role_user.html"},{"text":"功能菜单导航表","type":"link","path":"sys/sys_nav.html"},{"text":"用户自定义菜单","type":"link","path":"sys/sys_nav_user.html"},{"text":"数据字典类别","type":"link","path":"sys/sys_dict_class.html"},{"text":"数据字段数据","type":"link","path":"sys/sys_dict_detail.html"},{"text":"系统附件","type":"link","path":"sys/sys_attach_file.html"},{"text":"系统富文本","type":"link","path":"sys/sys_attach_text.html"},{"text":"编号序列","type":"link","path":"sys/sys_serial.html"}]}]}},"config":{"timezone":null,"root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">中核中原 - API文档</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h1 id="数据看板顺序生产设备设施，作业安全，会议，生产费用"><a href="#数据看板顺序生产设备设施，作业安全，会议，生产费用" class="headerlink" title="数据看板顺序生产设备设施，作业安全，会议，生产费用"></a>数据看板顺序生产设备设施，作业安全，会议，生产费用</h1><h2 id="生产设备设施列表"><a href="#生产设备设施列表" class="headerlink" title="生产设备设施列表"></a>生产设备设施列表</h2><h3 id="Request"><a href="#Request" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/pf</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– pfType</td>
+<td>List</td>
+<td></td>
+<td>列表不限制，柱形图设备类型最多选5，再给一个全部，如果选择全部字段给我传空</td>
+</tr>
+<tr>
+<td>– pffacility</td>
+<td>String</td>
+<td></td>
+<td>设备数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfnew</td>
+<td>String</td>
+<td></td>
+<td>新增数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfout</td>
+<td>String</td>
+<td></td>
+<td>退场数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfscrap</td>
+<td>String</td>
+<td></td>
+<td>报废数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>柱形图横坐标是部门 一个部门有多个柱子每个柱子是类型，柱子的值是勾选条件的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– C_TYPE</td>
+<td>List</td>
+<td></td>
+<td>设备类型</td>
+</tr>
+<tr>
+<td>– R_SECTION</td>
+<td>String</td>
+<td></td>
+<td>部门</td>
+</tr>
+<tr>
+<td>– NEW</td>
+<td>String</td>
+<td></td>
+<td>新增设备数量</td>
+</tr>
+<tr>
+<td>– PFOUT</td>
+<td>List</td>
+<td></td>
+<td>退场设备数量</td>
+</tr>
+<tr>
+<td>– NOTEXAMINE</td>
+<td>String</td>
+<td></td>
+<td>未检查设备数量</td>
+</tr>
+<tr>
+<td>– SCRAP</td>
+<td>String</td>
+<td></td>
+<td>报废数量</td>
+</tr>
+<tr>
+<td>– TIME</td>
+<td>String</td>
+<td></td>
+<td>时间</td>
+</tr>
+<tr>
+<td>– FPALL</td>
+<td>String</td>
+<td></td>
+<td>全部设备数量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">                <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"data"</span>: &#123;</span><br><span class="line">                    <span class="attr">"C_TREE_PATH"</span>: <span class="string">"1"</span>,</span><br><span class="line">                    <span class="attr">"dataList"</span>: &#123;</span><br><span class="line">                        <span class="attr">"columns"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"c_type"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_section"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"new"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"pfout"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"scrap"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"notexamine"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"time"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"fpall"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"records"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"C_TYPE"</span>: <span class="string">"消防设备"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"NEW"</span>: <span class="number">4</span>,</span><br><span class="line">                                <span class="attr">"PFOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"SCRAP"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"NOTEXAMINE"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"FPALL"</span>: <span class="number">4</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"C_TYPE"</span>: <span class="string">"履带吊"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"NEW"</span>: <span class="number">3</span>,</span><br><span class="line">                                <span class="attr">"PFOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"SCRAP"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"NOTEXAMINE"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"FPALL"</span>: <span class="number">3</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"pageSize"</span>: <span class="number">20</span>,</span><br><span class="line">                        <span class="attr">"pageIndex"</span>: <span class="number">0</span>,</span><br><span class="line">                        <span class="attr">"recordCount"</span>: <span class="number">2</span>,</span><br><span class="line">                        <span class="attr">"pageCount"</span>: <span class="number">1</span>,</span><br><span class="line">                        <span class="attr">"empty"</span>: <span class="literal">false</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">                <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="生产设备设施柱形图"><a href="#生产设备设施柱形图" class="headerlink" title="生产设备设施柱形图"></a>生产设备设施柱形图</h2><h3 id="Request-1"><a href="#Request-1" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/pf</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– pfType</td>
+<td>List</td>
+<td></td>
+<td>列表不限制，柱形图设备类型最多选5，再给一个全部，如果选择全部字段给我传空</td>
+</tr>
+<tr>
+<td>– pffacility</td>
+<td>String</td>
+<td></td>
+<td>设备数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfnew</td>
+<td>String</td>
+<td></td>
+<td>新增数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfout</td>
+<td>String</td>
+<td></td>
+<td>退场数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– pfscrap</td>
+<td>String</td>
+<td></td>
+<td>报废数量条件，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>柱形图横坐标是部门 一个部门有多个柱子每个柱子是类型，柱子的值是勾选条件的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-1"><a href="#Response-1" class="headerlink" title="Response"></a>Response</h3><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"pffacility"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">7</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">2</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"pfnew"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">7</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">2</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"pfout"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"pfscrap"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"所有设备"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="作业安全列表"><a href="#作业安全列表" class="headerlink" title="作业安全列表"></a>作业安全列表</h2><h3 id="Request-2"><a href="#Request-2" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/os</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– osjobclasssid</td>
+<td>List</td>
+<td></td>
+<td>列表不限制，柱形图作业类型最多选5，再给一个全部，如果选择全部字段给我传空</td>
+</tr>
+<tr>
+<td>– osconditionarea</td>
+<td>List</td>
+<td></td>
+<td>柱形图只能选择一个区域，列表不限制</td>
+</tr>
+<tr>
+<td>– oscount</td>
+<td>String</td>
+<td></td>
+<td>柱形图许可数量，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– osarea</td>
+<td>String</td>
+<td></td>
+<td>柱形图区域，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– osstatus</td>
+<td>String</td>
+<td></td>
+<td>柱形图状态，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>柱形图横坐标是部门 一个部门有多个柱子每个柱子是类型，柱子的值是勾选条件的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-2"><a href="#Response-2" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– R_JOBCLASSSID</td>
+<td>List</td>
+<td></td>
+<td>作业类型</td>
+</tr>
+<tr>
+<td>– R_SECTION</td>
+<td>String</td>
+<td></td>
+<td>部门</td>
+</tr>
+<tr>
+<td>– TIME</td>
+<td>String</td>
+<td></td>
+<td>时间</td>
+</tr>
+<tr>
+<td>– COUNT</td>
+<td>String</td>
+<td></td>
+<td>作业数量</td>
+</tr>
+<tr>
+<td>– SETOUT</td>
+<td>String</td>
+<td></td>
+<td>作业审批</td>
+</tr>
+<tr>
+<td>– APPROVEING</td>
+<td>String</td>
+<td></td>
+<td>作业前检查</td>
+</tr>
+<tr>
+<td>– TURN</td>
+<td>String</td>
+<td></td>
+<td>作业后检查</td>
+</tr>
+<tr>
+<td>– APPROVE</td>
+<td>String</td>
+<td></td>
+<td>关闭</td>
+</tr>
+<tr>
+<td>– TERMINATION</td>
+<td>String</td>
+<td></td>
+<td>终止</td>
+</tr>
+<tr>
+<td>– COUNT(A.R_AREA)</td>
+<td>String</td>
+<td></td>
+<td>区域数量</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>柱形图横坐标是部门 一个部门有多个柱子每个柱子是类型，柱子的值是勾选条件的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">                <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"data"</span>: &#123;</span><br><span class="line">                    <span class="attr">"dataList"</span>: &#123;</span><br><span class="line">                        <span class="attr">"columns"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_jobclasssid"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_section"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"time"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"count"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"setout"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"approveing"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"turn"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"approve"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"termination"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"count(a.r_area)"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"records"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_JOBCLASSSID"</span>: <span class="string">"动火作业"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"SETOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVEING"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"TURN"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVE"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"TERMINATION"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"COUNT(A.R_AREA)"</span>: <span class="number">1</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_JOBCLASSSID"</span>: <span class="string">"动火作业"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">4</span>,</span><br><span class="line">                                <span class="attr">"SETOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVEING"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"TURN"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"APPROVE"</span>: <span class="number">2</span>,</span><br><span class="line">                                <span class="attr">"TERMINATION"</span>: <span class="number">2</span>,</span><br><span class="line">                                <span class="attr">"COUNT(A.R_AREA)"</span>: <span class="number">4</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_JOBCLASSSID"</span>: <span class="string">"动土作业"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">5</span>,</span><br><span class="line">                                <span class="attr">"SETOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVEING"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"TURN"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVE"</span>: <span class="number">5</span>,</span><br><span class="line">                                <span class="attr">"TERMINATION"</span>: <span class="number">5</span>,</span><br><span class="line">                                <span class="attr">"COUNT(A.R_AREA)"</span>: <span class="number">5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_JOBCLASSSID"</span>: <span class="string">"动土作业"</span>,</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"SETOUT"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVEING"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"TURN"</span>: <span class="number">0</span>,</span><br><span class="line">                                <span class="attr">"APPROVE"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"TERMINATION"</span>: <span class="number">1</span>,</span><br><span class="line">                                <span class="attr">"COUNT(A.R_AREA)"</span>: <span class="number">1</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"pageSize"</span>: <span class="number">20</span>,</span><br><span class="line">                        <span class="attr">"pageIndex"</span>: <span class="number">0</span>,</span><br><span class="line">                        <span class="attr">"recordCount"</span>: <span class="number">4</span>,</span><br><span class="line">                        <span class="attr">"pageCount"</span>: <span class="number">1</span>,</span><br><span class="line">                        <span class="attr">"empty"</span>: <span class="literal">false</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">                <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="作业安全柱形图"><a href="#作业安全柱形图" class="headerlink" title="作业安全柱形图"></a>作业安全柱形图</h2><h3 id="Request-3"><a href="#Request-3" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/os</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– osjobclasssid</td>
+<td>List</td>
+<td></td>
+<td>列表不限制，柱形图作业类型最多选5，再给一个全部，如果选择全部字段给我传空</td>
+</tr>
+<tr>
+<td>– osconditionarea</td>
+<td>List</td>
+<td></td>
+<td>柱形图只能选择一个区域，列表不限制</td>
+</tr>
+<tr>
+<td>– oscount</td>
+<td>String</td>
+<td></td>
+<td>柱形图许可数量，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– osarea</td>
+<td>String</td>
+<td></td>
+<td>柱形图区域，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>– osstatus</td>
+<td>String</td>
+<td></td>
+<td>柱形图状态，如果勾选传1没勾选传0</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>柱形图横坐标是部门 一个部门有多个柱子每个柱子是类型，柱子的值是勾选条件的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-3"><a href="#Response-3" class="headerlink" title="Response"></a>Response</h3><h3 id="示例-3"><a href="#示例-3" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"osarea"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"全部类型"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">1</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"全部类型"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">2</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"oscount"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"全部类型"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">5</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"全部类型"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">6</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"osstatus"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业审批"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业前检查"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">1</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业后检查"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">1</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"关闭"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">3</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"终止"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业审批"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业前检查"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"作业后检查"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"关闭"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">6</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"终止"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">0</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="会议列表"><a href="#会议列表" class="headerlink" title="会议列表"></a>会议列表</h2><h3 id="Request-4"><a href="#Request-4" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/ttr</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– ttraction</td>
+<td>String</td>
+<td></td>
+<td>柱形图行动项条件</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>单柱型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-4"><a href="#Response-4" class="headerlink" title="Response"></a>Response</h3><h3 id="示例-4"><a href="#示例-4" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">                <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"data"</span>: &#123;</span><br><span class="line">                    <span class="attr">"list"</span>: &#123;</span><br><span class="line">                        <span class="attr">"columns"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_section"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"time"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"count"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">-5</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"close"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"lateclose"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"records"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">5</span>,</span><br><span class="line">                                <span class="attr">"CLOSE"</span>: <span class="string">"20.00%"</span>,</span><br><span class="line">                                <span class="attr">"LATECLOSE"</span>: <span class="string">"20.00%"</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"TIME"</span>: <span class="string">"2000-01-01至3000-01-01"</span>,</span><br><span class="line">                                <span class="attr">"COUNT"</span>: <span class="number">4</span>,</span><br><span class="line">                                <span class="attr">"CLOSE"</span>: <span class="string">"75.00%"</span>,</span><br><span class="line">                                <span class="attr">"LATECLOSE"</span>: <span class="string">"0.000%"</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"empty"</span>: <span class="literal">false</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">                <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="会议柱形图"><a href="#会议柱形图" class="headerlink" title="会议柱形图"></a>会议柱形图</h2><h3 id="Request-5"><a href="#Request-5" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/ttr</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– ttraction</td>
+<td>String</td>
+<td></td>
+<td>柱形图行动项条件</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+<td>单柱型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-5"><a href="#Response-5" class="headerlink" title="Response"></a>Response</h3><h3 id="示例-5"><a href="#示例-5" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"ttraction"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"行动项"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">4</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"行动项"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">5</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="费用列表"><a href="#费用列表" class="headerlink" title="费用列表"></a>费用列表</h2><h3 id="Request-6"><a href="#Request-6" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/cost</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组 列表不限制，柱形图最多选五个</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间，</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– ttryear</td>
+<td>String</td>
+<td></td>
+<td>年份如2020  除了罚款全传年份</td>
+</tr>
+<tr>
+<td>– ttrtype</td>
+<td>List</td>
+<td></td>
+<td>费用类型 列表不限制 柱形图值能选择一个或者全部 全部传空</td>
+</tr>
+<tr>
+<td>– ttrstandingbook</td>
+<td>String</td>
+<td></td>
+<td>费用台账</td>
+</tr>
+<tr>
+<td>– ttrplan</td>
+<td>String</td>
+<td></td>
+<td>预算执行率</td>
+</tr>
+<tr>
+<td>– ttrfine</td>
+<td>String</td>
+<td></td>
+<td>罚款台账</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-6"><a href="#Response-6" class="headerlink" title="Response"></a>Response</h3><table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– R_SECTION</td>
+<td>String</td>
+<td></td>
+<td>部门</td>
+</tr>
+<tr>
+<td>– R_TYPEPID</td>
+<td>String</td>
+<td></td>
+<td>费用类型</td>
+</tr>
+<tr>
+<td>– C_BUDGETMONEY</td>
+<td>String</td>
+<td></td>
+<td>计划费用</td>
+</tr>
+<tr>
+<td>– C_PRACTICALMONEY</td>
+<td>String</td>
+<td></td>
+<td>实际费用</td>
+</tr>
+<tr>
+<td>– BUDGET</td>
+<td>String</td>
+<td>String</td>
+<td>费用执行率</td>
+</tr>
+<tr>
+<td>– FINE</td>
+<td>String</td>
+<td>String</td>
+<td>罚款</td>
+</tr>
+</tbody>
+</table>
+<h3 id="示例-6"><a href="#示例-6" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">                <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">                <span class="attr">"data"</span>: &#123;</span><br><span class="line">                    <span class="attr">"data"</span>: &#123;</span><br><span class="line">                        <span class="attr">"columns"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_section"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"r_typepid"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"c_budgetmoney"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">3</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"c_practicalmoney"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">3</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"budget"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">12</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"name"</span>: <span class="string">"fine"</span>,</span><br><span class="line">                                <span class="attr">"type"</span>: <span class="number">3</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"records"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                                <span class="attr">"R_TYPEPID"</span>: <span class="string">"个人防护用品"</span>,</span><br><span class="line">                                <span class="attr">"C_BUDGETMONEY"</span>: <span class="number">11</span>,</span><br><span class="line">                                <span class="attr">"C_PRACTICALMONEY"</span>: <span class="number">11</span>,</span><br><span class="line">                                <span class="attr">"BUDGET"</span>: <span class="string">"100%"</span>,</span><br><span class="line">                                <span class="attr">"FINE"</span>: <span class="literal">null</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"R_SECTION"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"R_TYPEPID"</span>: <span class="string">"个人防护用品"</span>,</span><br><span class="line">                                <span class="attr">"C_BUDGETMONEY"</span>: <span class="number">10</span>,</span><br><span class="line">                                <span class="attr">"C_PRACTICALMONEY"</span>: <span class="number">10</span>,</span><br><span class="line">                                <span class="attr">"BUDGET"</span>: <span class="string">"100%"</span>,</span><br><span class="line">                                <span class="attr">"FINE"</span>: <span class="number">11</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ],</span><br><span class="line">                        <span class="attr">"empty"</span>: <span class="literal">false</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">                <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">                <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="费用柱形图"><a href="#费用柱形图" class="headerlink" title="费用柱形图"></a>费用柱形图</h2><h3 id="Request-7"><a href="#Request-7" class="headerlink" title="Request"></a>Request</h3><p><strong>POST</strong> <code>/dataBoard/cost</code></p>
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>类型</th>
+<th>必要性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>– deptList</td>
+<td>List</td>
+<td></td>
+<td>部门数组 列表不限制，柱形图最多选五个</td>
+</tr>
+<tr>
+<td>– startTime</td>
+<td>String</td>
+<td></td>
+<td>开始时间，</td>
+</tr>
+<tr>
+<td>– endTime</td>
+<td>String</td>
+<td></td>
+<td>结束时间</td>
+</tr>
+<tr>
+<td>– showForm</td>
+<td>String</td>
+<td></td>
+<td>展现形式 1列表3柱形图</td>
+</tr>
+<tr>
+<td>– ttryear</td>
+<td>String</td>
+<td></td>
+<td>年份如2020  除了罚款全传年份</td>
+</tr>
+<tr>
+<td>– ttrtype</td>
+<td>List</td>
+<td></td>
+<td>费用类型 列表不限制 柱形图值能选择一个或者全部 全部传空</td>
+</tr>
+<tr>
+<td>– ttrstandingbook</td>
+<td>String</td>
+<td></td>
+<td>费用台账</td>
+</tr>
+<tr>
+<td>– ttrplan</td>
+<td>String</td>
+<td></td>
+<td>预算执行率</td>
+</tr>
+<tr>
+<td>– ttrfine</td>
+<td>String</td>
+<td></td>
+<td>罚款台账</td>
+</tr>
+<tr>
+<td>–</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Response-7"><a href="#Response-7" class="headerlink" title="Response"></a>Response</h3><h3 id="示例-7"><a href="#示例-7" class="headerlink" title="示例"></a>示例</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="attr">"message"</span>: <span class="string">""</span>,</span><br><span class="line">    <span class="attr">"data"</span>: &#123;</span><br><span class="line">        <span class="attr">"data"</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"ttrstandingbook"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"1月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"2月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"3月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"信息文档部全部类型3月:11.00"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">11</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"中国中原对外工程有限公司全部类型3月:10.00"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">10</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"4月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"5月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"6月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"7月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"8月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"9月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"10月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"11月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"12月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"ttrplan"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"1月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"2月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"3月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"信息文档部全部设备3月:100%"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="string">"100%"</span></span><br><span class="line">                            &#125;,</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"中国中原对外工程有限公司全部设备3月:100%"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="string">"100%"</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"4月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"5月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"6月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"7月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"8月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"9月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"10月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"11月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"12月"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">"id"</span>: <span class="string">"ttrfine"</span>,</span><br><span class="line">                <span class="attr">"data"</span>: [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: [</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="attr">"NAME"</span>: <span class="string">"中国中原对外工程有限公司"</span>,</span><br><span class="line">                                <span class="attr">"VAL"</span>: <span class="number">11</span></span><br><span class="line">                            &#125;</span><br><span class="line">                        ]</span><br><span class="line">                    &#125;,</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"dept"</span>: <span class="string">"信息文档部"</span>,</span><br><span class="line">                        <span class="attr">"data"</span>: []</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"exception"</span>: <span class="literal">null</span>,</span><br><span class="line">    <span class="attr">"requestData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"sessionData"</span>: &#123;&#125;,</span><br><span class="line">    <span class="attr">"applicationData"</span>: &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
